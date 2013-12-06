@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Linpack", "Linpack\Linpack.csproj", "{0C2935D1-C8FD-4039-A038-7D3493F5596F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Linpack.Console", "Linpack.Console\Linpack.Console.csproj", "{824E5DDD-FC9A-4A11-ACB6-F639B5B6F382}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Linpack.Droid", "Linpack.Droid\Linpack.Droid.csproj", "{BDDAF4B7-8519-4B05-9542-FCCF80A15289}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0C2935D1-C8FD-4039-A038-7D3493F5596F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C2935D1-C8FD-4039-A038-7D3493F5596F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C2935D1-C8FD-4039-A038-7D3493F5596F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C2935D1-C8FD-4039-A038-7D3493F5596F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{824E5DDD-FC9A-4A11-ACB6-F639B5B6F382}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{824E5DDD-FC9A-4A11-ACB6-F639B5B6F382}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{824E5DDD-FC9A-4A11-ACB6-F639B5B6F382}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{824E5DDD-FC9A-4A11-ACB6-F639B5B6F382}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BDDAF4B7-8519-4B05-9542-FCCF80A15289}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDDAF4B7-8519-4B05-9542-FCCF80A15289}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDDAF4B7-8519-4B05-9542-FCCF80A15289}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{BDDAF4B7-8519-4B05-9542-FCCF80A15289}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDDAF4B7-8519-4B05-9542-FCCF80A15289}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BDDAF4B7-8519-4B05-9542-FCCF80A15289}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

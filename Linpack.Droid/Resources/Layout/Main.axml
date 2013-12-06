@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <EditText
+        android:id="@+id/iterations"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:hint="Enter iterations (default is 10)"
+        android:inputType="number" />
+    <LinearLayout
+        android:layout_below="@+id/iterations"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:id="@+id/buttons">
+        <Button
+            android:text="Run Single Thread (Mono)"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/single" />
+        <Button
+            android:text="Run Multi Thread (Mono)"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/multi" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_below="@+id/buttons"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/results_mono">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="MFLOPS" />
+            <TextView
+                android:layout_height="wrap_content"
+                android:id="@+id/mflops"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right|center_vertical" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Time" />
+            <TextView
+                android:layout_height="wrap_content"
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right|center_vertical" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Norm Res" />
+            <TextView
+                android:layout_height="wrap_content"
+                android:id="@+id/normres"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right|center_vertical" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Precision" />
+            <TextView
+                android:layout_height="wrap_content"
+                android:id="@+id/precision"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right|center_vertical" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_below="@+id/results_mono"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:id="@+id/buttons_java">
+        <Button
+            android:text="Run Single Thread (Dalvik VM)"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/single_java" />
+        <Button
+            android:text="Run Multi Thread (Dalvik VM)"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/multi_java" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_below="@+id/buttons_java"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/results_java">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="MFLOPS" />
+            <TextView
+                android:layout_height="wrap_content"
+                android:id="@+id/mflops_java"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right|center_vertical" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Time" />
+            <TextView
+                android:layout_height="wrap_content"
+                android:id="@+id/time_java"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right|center_vertical" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Norm Res" />
+            <TextView
+                android:layout_height="wrap_content"
+                android:id="@+id/normres_java"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right|center_vertical" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Precision" />
+            <TextView
+                android:layout_height="wrap_content"
+                android:id="@+id/precision_java"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right|center_vertical" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
